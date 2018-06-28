@@ -1,0 +1,63 @@
+// vcStage.vue
+// ==================================================/
+.stage {
+  @include background-gradient(#796041, #000000, 'vertical');
+}
+
+.bonsai_stage--bg {
+  min-height: 200px;
+  height: 290px;
+
+  img {
+    @extend %img--responsive;
+  }  
+}
+
+.bonsai_stage--right {
+  background-color: #000;
+  position: relative;
+
+  // mobile portrait (320x480) 
+  @include mq($from: mobile) {
+    // tree
+    > img {
+      display: none;
+    }
+  }
+  
+  // *mobile landscape (480x320)
+  @include mq($from: mobileLandscape) {
+    // tree
+    > img {
+      display: block;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      z-index: 2;
+    }
+  }
+}
+
+.carousel_holder {
+  @extend %mp--0;
+  @extend %pos--relative;
+  // height: 240px;
+  background-color: #fff;
+  overflow: hidden;
+  z-index: 1;
+
+  &:hover {
+    z-index: 3;
+  }
+
+  // mobile portrait (320x480) 
+  @include mq($from: mobile) {
+    width: 100%;
+  }
+  
+  // *mobile landscape (480x320)
+  @include mq($from: mobileLandscape) {
+    width: 662px;
+  }
+  
+}

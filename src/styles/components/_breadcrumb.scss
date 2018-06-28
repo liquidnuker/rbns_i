@@ -1,0 +1,28 @@
+.breadcrumb {
+  @extend %display--inline-block;
+  @extend %padd--4;
+  @extend %lrbg2;
+  @extend %border--primary;
+  @extend %link_color--hover;
+  @include font-size(14px);
+  -webkit-box-shadow: inset 0px 0px 16px #bfba76;
+  -moz-box-shadow: inset 0px 0px 16px #bfba76;
+  box-shadow: inset 0px 0px 16px #bfba76;
+  border-radius: 0px; 
+
+  a {
+    @extend %font_color--primary;
+    &:hover {
+      text-decoration: none;  
+    }
+  }
+
+  svg {
+    @extend %display--inline-block;
+    cursor: pointer;
+    vertical-align: text-bottom;
+    fill: #4D3D29;
+    width: 16px;
+    height: 16px;
+  }
+}

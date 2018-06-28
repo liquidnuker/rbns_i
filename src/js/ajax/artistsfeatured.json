@@ -1,0 +1,30 @@
+{"artists":[
+  {
+    "name": "name1",
+    "description": "description1",
+    "quote": "quote1",
+    "storyP1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+    "storyP2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "storyP3": "storyP3",
+    "photo": "src/img/news1.jpg",
+    "photo_caption": "photo_caption1"
+  }, {
+    "name": "name2",
+    "description": "description2",
+    "quote": "quote2",
+    "storyP1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+    "storyP2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "storyP3": "storyP3",
+    "photo": "src/img/news1.jpg",
+    "photo_caption": "photo_caption2"
+  }, {
+    "name": "name3",
+    "description": "description3",
+    "quote": "quote3",
+    "storyP1": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+    "storyP2": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam",
+    "storyP3": "storyP3",
+    "photo": "src/img/news1.jpg",
+    "photo_caption": "photo_caption3"
+  }
+]}

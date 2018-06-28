@@ -1,0 +1,104 @@
+// vcCarousel.vue
+// ==================================================/
+@mixin carousel1_04_pagebuttons() {
+  @extend %lrbg2;
+  @extend %border--primary;
+  $size: 12px;
+  width: $size;
+  height: $size;
+}
+
+.carousel1-04 {
+  @extend %pos--relative;
+
+  &:hover .carousel1-04_prevnext {
+    visibility: visible;
+  }
+
+}
+
+.carousel1_04_pagebuttons {
+  @extend %display--inline-block;
+  @include carousel1_04_pagebuttons();
+  border-radius: 50%;  
+  margin-right: 4px;
+  cursor: pointer;
+
+  &:hover {
+    @extend .carousel1_04_pagebuttons--active;
+  }
+}
+
+.carousel1_04_pagebuttons--active {
+  background-color: #415e01;
+  border: 1px solid #fff;
+}
+
+.carousel1_04_items {
+  height: 0;
+  opacity: 0;
+  transition: visibility 4s, opacity 0.5s ease-in;
+}
+
+.carousel1_04_items--active {
+  height: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.carousel1-04_content {
+  // height: 60px;
+}
+
+.carousel1-04_description {
+  @extend %lrbg2;
+  @extend %text--center;
+  @extend %padd--4;
+  @extend %pos--relative;
+  z-index: 1;
+}
+
+// controls
+.carousel1-04_pagination {
+  @extend %pos--absolute;
+  @extend %text--center;
+  width: 100%;
+  bottom: 15%;  
+  z-index: 3;
+}
+
+.carousel1-04_prevnext {
+  @include center-both;
+  visibility: hidden;
+  height: 60%;
+  width: 100%;
+  z-index: 2;
+}
+
+.carousel1_04_previous,
+.carousel1_04_next {
+  @extend %display--inline-block;
+  @extend %pos--relative;
+  background-color: #000;
+  padding: 10px;
+  height: 100%;
+  cursor: pointer;
+
+  svg {
+    @include center-both;
+  } 
+}
+
+.carousel1_04_previous {
+
+}
+
+.carousel1_04_next {
+  float: right;
+}
+
+.carousel1_04_chevron {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}

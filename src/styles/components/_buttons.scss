@@ -1,0 +1,79 @@
+// base button styles
+// ==================================================/
+%btn--transparent {
+  background-color: transparent;
+}
+
+%btn_cursor--pointer {
+  cursor: pointer;
+}
+
+button,
+input [type="button"],
+[type="reset"],
+[type="submit"] {
+  // see vendor/normalize.scss for other properties
+  @extend %mp--0;
+}
+
+.btn {
+  @extend %caudex--regular;
+  @extend %mp--0;
+  display: inline-block;
+  font-size: 100%; 
+  line-height: 1.15;  
+}
+
+.btn--md {
+  border-radius: 6px;
+  height: 30px;
+
+}
+
+.btn--lg {
+  border-radius: 6px;
+  height: 40px;
+}
+
+// themes
+// ==================================================/
+.btn1-01 {
+  color: #fff;
+  padding: 4px 8px 4px 8px; /* trbl */
+  border: 1px solid #000;
+  @extend %btn_cursor--pointer;
+  @include background-gradient(#cc0000, #be0101, 'vertical');
+  text-shadow: 1px 1px 1px #be0101;
+  display: inline-block;
+
+  &:hover {
+    background: none;
+    background-color: #cc0000;
+  }
+}
+
+// modal prev/next
+.btn1-02 {
+  @extend %padd--4;
+  @extend %lrbg2;
+  @extend %font_color--primary;
+  @extend %border--primary;
+  @extend %btn_cursor--pointer;
+  @extend %display--inline-block;
+
+  > svg {
+    @extend %display--inline-block;
+    vertical-align: text-bottom;
+    height: 18px;
+    fill: #415e01;
+  }
+
+  &:hover {
+    background-color: #4d3d29; 
+    color: #fff;
+
+    > svg {
+      fill: #fff;
+    }
+  }
+}

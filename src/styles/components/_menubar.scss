@@ -1,0 +1,44 @@
+/* components/_menubar2.scss
+=================================================*/
+
+.menubar2 {
+// border: 2px solid green;
+display: block;
+position: relative;
+
+.menubar2_mainItem {
+  background-color: #666;   
+
+  &:hover {
+    background-color: #ccc;   
+  } 
+}
+
+li {
+  background-color: #666;   
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  position: relative;
+
+  &:hover {
+    background-color: #ccc;   
+  }
+}
+
+a {
+  display: block;
+  color: #fff;
+}
+
+// *mobile landscape (480x320)
+@include mq($from: mobileLandscape) {
+  .menubar2_mainItem {
+    width: 20%;
+  }
+}
+}
+
+
+
+
+
