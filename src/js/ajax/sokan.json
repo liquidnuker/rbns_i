@@ -1,0 +1,39 @@
+{
+    "sokan": [{
+        "species": "sokan",
+        "id": "sokan01",
+        "img": "sokan01",
+        "description": "sokan01description01",
+        "value": "5"
+    }, {
+        "species": "sokan",
+        "id": "sokan02",
+        "img": "sokan02",
+        "description": "sokan02description02",
+        "value": "5"
+    }, {
+        "species": "sokan",
+        "id": "sokan03",
+        "img": "sokan03",
+        "description": "sokan03description03",
+        "value": "5"
+    }, {
+        "species": "sokan",
+        "id": "sokan04",
+        "img": "sokan04",
+        "description": "sokan04description04",
+        "value": "5"
+    }, {
+        "species": "sokan",
+        "id": "sokan05",
+        "img": "sokan05",
+        "description": "sokan05description05",
+        "value": "5"
+    }, {
+        "species": "sokan",
+        "id": "sokan06",
+        "img": "sokan06",
+        "description": "sokan06description06",
+        "value": "5"
+    }]
+}

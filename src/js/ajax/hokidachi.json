@@ -1,0 +1,15 @@
+{
+    "hokidachi": [{
+        "species": "hokidachi",
+        "id": "hokidachi01",
+        "img": "hokidachi01",
+        "description": "hokidachi01description01",
+        "value": "5"
+    }, {
+        "species": "hokidachi",
+        "id": "hokidachi02",
+        "img": "hokidachi02",
+        "description": "hokidachi02description02",
+        "value": "5"
+    }]
+}

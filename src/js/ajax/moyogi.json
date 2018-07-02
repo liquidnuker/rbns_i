@@ -1,0 +1,39 @@
+{
+    "moyogi": [{
+        "species": "moyogi",
+        "id": "moyogi01",
+        "img": "moyogi01",
+        "description": "moyogi01description01",
+        "value": "5"
+    }, {
+        "species": "moyogi",
+        "id": "moyogi02",
+        "img": "moyogi02",
+        "description": "moyogi02description02",
+        "value": "5"
+    }, {
+        "species": "moyogi",
+        "id": "moyogi03",
+        "img": "moyogi03",
+        "description": "moyogi03description03",
+        "value": "5"
+    }, {
+        "species": "moyogi",
+        "id": "moyogi04",
+        "img": "moyogi04",
+        "description": "moyogi04description04",
+        "value": "5"
+    }, {
+        "species": "moyogi",
+        "id": "moyogi05",
+        "img": "moyogi05",
+        "description": "moyogi05description05",
+        "value": "5"
+    }, {
+        "species": "moyogi",
+        "id": "moyogi06",
+        "img": "moyogi06",
+        "description": "moyogi06description06",
+        "value": "5"
+    }]
+}

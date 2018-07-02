@@ -1,0 +1,39 @@
+{
+  "fukinagashi": [{
+    "species": "fukinagashi",
+    "id": "fukinagashi01",
+    "img": "fukinagashi01",
+    "description": "fukinagashi01description01",
+    "value": "5"
+  }, {
+    "species": "fukinagashi",
+    "id": "fukinagashi02",
+    "img": "fukinagashi02",
+    "description": "fukinagashi02description02",
+    "value": "5"
+  }, {
+    "species": "fukinagashi",
+    "id": "fukinagashi03",
+    "img": "fukinagashi03",
+    "description": "fukinagashi03description03",
+    "value": "5"
+  }, {
+    "species": "fukinagashi",
+    "id": "fukinagashi04",
+    "img": "fukinagashi04",
+    "description": "fukinagashi04description04",
+    "value": "5"
+  }, {
+    "species": "fukinagashi",
+    "id": "fukinagashi05",
+    "img": "fukinagashi05",
+    "description": "fukinagashi05description05",
+    "value": "5"
+  }, {
+    "species": "fukinagashi",
+    "id": "fukinagashi06",
+    "img": "fukinagashi06",
+    "description": "fukinagashi06description06",
+    "value": "5"
+  }]
+}
