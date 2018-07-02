@@ -259,7 +259,7 @@ export default {
       vcGalleryLeftNav1: vcGalleryLeftNav1
     },
     mounted: function () {
-      this.loadItems();
+      this.checkCategory();
     },
     watch: {
       $route: function () {
@@ -271,41 +271,26 @@ export default {
         // check if category exists before loading json
         let categoryToCheck = this.$route.params.species.toLowerCase();
 
-        if (categoryToCheck === "all") {
-          this.currentItems = this.allItems;
-          this.activatePager();
-          } else if (!itemExists(categoryToCheck, bonsaiCategories)) {
-          // console.log("404/revert to gallery/defaultItem");
+        if (!itemExists(categoryToCheck, bonsaiCategories)) {
+          console.log("404/revert to gallery/defaultItem");
           router.push({
-            path: "/gallery/all"
+            path: "/gallery/chokkan"
           });
         } else {
           this.currentCategory = categoryToCheck;
-          this.filterItems();
+          this.loadItems(this.currentCategory);
         }
       },
-      loadItems: function () {
-        const jsonUrl = "./src/js/ajax/bonsai.json";
-        
+      loadItems: function (category) {
+        const jsonUrl = "./src/js/ajax/" + category + ".json";
+
         axios_get(jsonUrl)
           .then((response) => {
-            // pass to allItems before filtering
-            this.allItems = response.data.bonsai;
+            this.currentItems = response.data[this.currentCategory];
           })
           .then(() => {
-            this.checkCategory();
+            this.activatePager();
           });
-      },
-      filterItems: function () {
-        let filteredType = "";
-
-        filteredType = this.allItems.filter((el) => {
-          return el.species === this.currentCategory;
-        });
-
-        this.currentItems = filteredType;
-        this.pagerActive = true;
-        this.activatePager();
       },
       activatePager: function() {
         this.pg = null;

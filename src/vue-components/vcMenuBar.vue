@@ -12,7 +12,7 @@
       <a href="#/artists">Artists</a>
     </li>
     <li class="col-xs-12 menubar2_mainItem">
-      <a href="#/gallery/tomeru">Gallery</a>
+      <a href="#/gallery/default">Gallery</a>
     </li>
     <li class="col-xs-12 menubar2_mainItem">
       <a href="">Contact</a>
