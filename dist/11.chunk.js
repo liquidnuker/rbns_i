@@ -1,1 +1,198 @@
-webpackJsonp([11],{50:function(e,s,t){"use strict";Object.defineProperty(s,"__esModule",{value:!0});var i=t(51),a=t(52),c=t(0),n=c(i.a,a.a,null,null,null);s.default=n.exports},51:function(e,s,t){"use strict";s.a={data:function(){return{}},watch:{},props:["prName1"],components:{},mounted:function(){},methods:{}}},52:function(e,s,t){"use strict";var i=function(){var e=this,s=e.$createElement,t=e._self._c||s;return t("div",[t("section",{staticClass:"home panel"},[e._m(0),e._v(" "),t("article",{staticClass:"row panel_body"},[t("section",{staticClass:"col-xs-12 col-sm-4 news_preview"},[t("div",{staticClass:"col-xs-12 col-sm-12 news_preview_box"},[t("img",{staticClass:"img--responsive",attrs:{src:"src/img/news1.jpg",alt:"latest news"}}),e._v(" "),t("date",[e._v("August 16")]),e._v(" "),t("h4",[e._v("Article title1")]),e._v(" "),e._m(1)],1)]),e._v(" "),t("section",{staticClass:"col-xs-12 col-sm-4 news_preview"},[t("div",{staticClass:"col-xs-12 col-sm-12 news_preview_box"},[t("img",{staticClass:"img--responsive",attrs:{src:"src/img/news1.jpg",alt:"latest news"}}),e._v(" "),t("date",[e._v("August 16")]),e._v(" "),t("h4",[e._v("Article title2")]),e._v(" "),e._m(2)],1)]),e._v(" "),t("section",{staticClass:"col-xs-12 col-sm-4 news_preview"},[t("div",{staticClass:"col-xs-12 col-sm-12 news_preview_box"},[t("img",{staticClass:"img--responsive",attrs:{src:"src/img/news1.jpg",alt:"latest news"}}),e._v(" "),t("date",[e._v("August 16")]),e._v(" "),t("h4",[e._v("Article title3")]),e._v(" "),e._m(3)],1)])])])])},a=[function(){var e=this,s=e.$createElement,t=e._self._c||s;return t("header",{staticClass:"panel_heading"},[t("h2",{staticClass:"title--centered"},[e._v("The Ancient Art of Bonsai")]),e._v(" "),t("h3",{staticClass:"title--centered"},[e._v("\r\n      A series of articles by the Featured Article\r\n      ")])])},function(){var e=this,s=e.$createElement,t=e._self._c||s;return t("summary",[t("p",[e._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusamus iste magnam consectetur esse, quia suscipit veniam enim minima labore, qui")])])},function(){var e=this,s=e.$createElement,t=e._self._c||s;return t("summary",[t("p",[e._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusamus iste magnam consectetur esse, quia suscipit veniam enim minima labore, qui")])])},function(){var e=this,s=e.$createElement,t=e._self._c||s;return t("summary",[t("p",[e._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusamus iste magnam consectetur esse, quia suscipit veniam enim minima labore, qui")])])}],c={render:i,staticRenderFns:a};s.a=c}});
+webpackJsonp([11],{
+
+/***/ 50:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vcHomeArticle_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_77b80fb1_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vcHomeArticle_vue__ = __webpack_require__(52);
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+
+/* template */
+
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_vcHomeArticle_vue__["a" /* default */],
+  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_77b80fb1_hasScoped_false_node_modules_vue_loader_lib_selector_type_template_index_0_vcHomeArticle_vue__["a" /* default */],
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "vue-components\\vcHomeArticle.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
+if (Component.options.functional) {console.error("[vue-loader] vcHomeArticle.vue: functional components are not supported with templates, they should use render functions.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-77b80fb1", Component.options)
+  } else {
+    hotAPI.reload("data-v-77b80fb1", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
+
+
+/***/ }),
+
+/***/ 51:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+  data: function data() {
+    return {};
+  },
+
+  watch: {
+    // : function () {
+    // }
+  },
+  props: ["prName1"],
+  components: {},
+  mounted: function mounted() {
+    // console.log("vcHomeArticlePreview.vue mounted");
+  },
+  methods: {}
+});
+
+/***/ }),
+
+/***/ 52:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('div', [_c('section', {
+    staticClass: "home panel"
+  }, [_vm._m(0), _vm._v(" "), _c('article', {
+    staticClass: "row panel_body"
+  }, [_c('section', {
+    staticClass: "col-xs-12 col-sm-4 news_preview"
+  }, [_c('div', {
+    staticClass: "col-xs-12 col-sm-12 news_preview_box"
+  }, [_c('img', {
+    staticClass: "img--responsive",
+    attrs: {
+      "src": "src/img/news1.jpg",
+      "alt": "latest news"
+    }
+  }), _vm._v(" "), _c('date', [_vm._v("August 16")]), _vm._v(" "), _c('h4', [_vm._v("Article title1")]), _vm._v(" "), _vm._m(1)], 1)]), _vm._v(" "), _c('section', {
+    staticClass: "col-xs-12 col-sm-4 news_preview"
+  }, [_c('div', {
+    staticClass: "col-xs-12 col-sm-12 news_preview_box"
+  }, [_c('img', {
+    staticClass: "img--responsive",
+    attrs: {
+      "src": "src/img/news1.jpg",
+      "alt": "latest news"
+    }
+  }), _vm._v(" "), _c('date', [_vm._v("August 16")]), _vm._v(" "), _c('h4', [_vm._v("Article title2")]), _vm._v(" "), _vm._m(2)], 1)]), _vm._v(" "), _c('section', {
+    staticClass: "col-xs-12 col-sm-4 news_preview"
+  }, [_c('div', {
+    staticClass: "col-xs-12 col-sm-12 news_preview_box"
+  }, [_c('img', {
+    staticClass: "img--responsive",
+    attrs: {
+      "src": "src/img/news1.jpg",
+      "alt": "latest news"
+    }
+  }), _vm._v(" "), _c('date', [_vm._v("August 16")]), _vm._v(" "), _c('h4', [_vm._v("Article title3")]), _vm._v(" "), _vm._m(3)], 1)])])])])
+}
+var staticRenderFns = [function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('header', {
+    staticClass: "panel_heading"
+  }, [_c('h2', {
+    staticClass: "title--centered"
+  }, [_vm._v("The Ancient Art of Bonsai")]), _vm._v(" "), _c('h3', {
+    staticClass: "title--centered"
+  }, [_vm._v("\r\n      A series of articles by the Featured Article\r\n      ")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('summary', [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusamus iste magnam consectetur esse, quia suscipit veniam enim minima labore, qui")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('summary', [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusamus iste magnam consectetur esse, quia suscipit veniam enim minima labore, qui")])])
+},function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+  return _c('summary', [_c('p', [_vm._v("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur accusamus iste magnam consectetur esse, quia suscipit veniam enim minima labore, qui")])])
+}]
+render._withStripped = true
+var esExports = { render: render, staticRenderFns: staticRenderFns }
+/* harmony default export */ __webpack_exports__["a"] = (esExports);
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-hot-reload-api").rerender("data-v-77b80fb1", esExports)
+  }
+}
+
+/***/ })
+
+});

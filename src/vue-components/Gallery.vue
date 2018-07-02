@@ -37,7 +37,7 @@
             </button>
           </div>
           <div class="bs4modal-body">
-            <img :src="'src/img/' + currentItems[currentIndex].full +
+            <img :src="'src/img/categories/' + currentCategory + '/' + currentItems[currentIndex].img +
       '.jpg'" :alt="currentItems[currentIndex].description">
           </div>
           <div class="bs4modal-footer">
@@ -182,7 +182,7 @@
                   <!-- grid for rwd -->
                   <div v-for="(i, index) in itemList" class="col-xs-12 col-sm-4 col-lg-3 gridder">
                     <div id="ajaxbox">
-                      <img :src="'src/img/' + i.thumb + '.jpg'" :alt="i.id"
+                      <img v-if="currentCategory" :src="'src/img/categories/' + currentCategory + '/' + i.img + '_thumb.jpg'" :alt="i.id"
                       @click="setCurrentIndex(i.id)"><br>
                       <p>{{ i.species }} {{ i.value }}</p>
                     </div>
@@ -230,7 +230,7 @@ import {indexFinder} from "../js/indexfinder.js";
 export default {
   data() {
       return {
-        currentCategory: "",
+        currentCategory: null,
         allItems: "",
         currentItems: "",
         itemList: "", // paginated items
