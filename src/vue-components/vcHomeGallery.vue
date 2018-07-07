@@ -13,7 +13,7 @@
         <section class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
-            <img src="src/img/bonsai1.jpg" class="img--responsive" alt="bonsai1">
+            <img src="src/img/ui/prev/chokkan.jpg" class="img--responsive" alt="bonsai1">
             <a class="gallery_preview_links" href="#/gallery/chokkan">Chokkan</a>
           </div>
           <!--gallery_preview_box-->
@@ -21,7 +21,7 @@
         <section class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
-            <img src="src/img/bonsai2.jpg" class="img--responsive" alt="bonsai2">
+            <img src="src/img/ui/prev/fukinagashi.jpg" class="img--responsive" alt="bonsai2">
             <a class="gallery_preview_links" href="#/gallery/fukinagashi">Fukinagashi</a>
           </div>
           <!--gallery_preview_box-->
@@ -29,7 +29,7 @@
         <section class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
-            <img src="src/img/bonsai3.jpg" class="img--responsive" alt="bonsai3">
+            <img src="src/img/ui/prev/hokidachi.jpg" class="img--responsive" alt="bonsai3">
             <a class="gallery_preview_links" href="#/gallery/hokidachi">Hokidachi</a>
           </div>
           <!--gallery_preview_box-->
@@ -37,7 +37,7 @@
         <section class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
-            <img src="src/img/bonsai4.jpg" class="img--responsive" alt="bonsai4">
+            <img src="src/img/ui/prev/kabudachi.jpg" class="img--responsive" alt="bonsai4">
             <a class="gallery_preview_links" href="#/gallery/kabudachi">Kabudachi</a>
           </div>
           <!--gallery_preview_box-->
@@ -49,7 +49,7 @@
         <section class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
-            <img src="src/img/bonsai5.jpg" class="img--responsive" alt="bonsai5">
+            <img src="src/img/ui/prev/moyogi.jpg" class="img--responsive" alt="bonsai5">
             <a class="gallery_preview_links" href="#/gallery/moyogi">Moyogi</a>
           </div>
           <!--gallery_preview_box-->
@@ -57,7 +57,7 @@
         <section class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
-            <img src="src/img/bonsai6.jpg" class="img--responsive" alt="bonsai6">
+            <img src="src/img/ui/prev/sokan.jpg" class="img--responsive" alt="bonsai6">
             <a class="gallery_preview_links" href="#/gallery/sokan">Sokan</a>
           </div>
           <!--gallery_preview_box-->
@@ -65,7 +65,7 @@
         <section class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
-            <img src="src/img/bonsai7.jpg" class="img--responsive" alt="bonsai7">
+            <img src="src/img/ui/prev/yose-ue.jpg" class="img--responsive" alt="bonsai7">
             <a class="gallery_preview_links" href="#/gallery/yose-ue">Yose-ue</a>
           </div>
           <!--gallery_preview_box-->
@@ -73,7 +73,7 @@
         <section class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
-            <img src="src/img/bonsai8.jpg" class="img--responsive" alt="bonsai8">
+            <img src="src/img/ui/prev/han-kengai.jpg" class="img--responsive" alt="bonsai8">
             <a class="gallery_preview_links" href="#/gallery/han-kengai">Han-kengai</a>
           </div>
           <!--gallery_preview_box-->

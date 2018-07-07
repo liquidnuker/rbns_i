@@ -2,22 +2,22 @@ const carouselItems = [
   {
     itemName: "item1",
     description: "Home Welcome text",
-    imgSrc: "home"
+    imgSrc: "carousel_home"
   }, 
   {
     itemName: "item2",
     description: "Articles description",
-    imgSrc: "articles"
+    imgSrc: "carousel_articles"
   }, 
   {
     itemName: "item3",
     description: "Artists description",
-    imgSrc: "artists"
+    imgSrc: "carousel_artists"
   },
   {
     itemName: "item4",
     description: "Gallery Description",
-    imgSrc: "gallery"
+    imgSrc: "carousel_gallery"
   }];
 
 export {carouselItems};

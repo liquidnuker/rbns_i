@@ -15,7 +15,7 @@
     <div class="row article_holder">
       <div class="col-sm-12">
         <div class="article_photo--left">
-          <img src="src/img/news1.jpg" class="img--responsive" alt="article1">
+          <img src="src/img/ui/prev/article3.jpg" class="img--responsive" alt="article1">
         </div>
         <p class="articles">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa iste, reprehenderit quam dolore sit mollitia eius velit minus odit nesciunt enim tempora omnis veniam inventore quaerat ab autem rerum eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis nemo laboriosam, accusantium, blanditiis cupiditate voluptas, architecto, aut necessitatibus laborum assumenda explicabo officiis. Aliquam amet quaerat aspernatur itaque perferendis, esse repudiandae.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa iste, reprehenderit quam dolore sit mollitia eius velit minus odit nesciunt enim tempora omnis veniam inventore quaerat ab autem rerum eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis nemo laboriosam, accusantium, blanditiis cupiditate voluptas, architecto, aut necessitatibus laborum assumenda explicabo officiis. Aliquam amet quaerat aspernatur itaque perferendis, esse repudiandae.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa iste, reprehenderit quam dolore sit mollitia eius velit minus odit nesciunt enim tempora omnis veniam inventore quaerat ab autem rerum eligendi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis nemo laboriosam, accusantium, blanditiis cupiditate voluptas, architecto, aut necessitatibus laborum assumenda explicabo officiis. Aliquam amet quaerat aspernatur itaque perferendis, esse repudiandae.</p>
       </div>
