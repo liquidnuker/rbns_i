@@ -5,10 +5,16 @@
 }
 
 .bonsai_stage--bg {
+  @extend %pos--relative;
+  background-image: url('../../src/img/ui/stage/bg_stage_png24.png');
+  background-position: top left;
+  background-repeat: no-repeat;
   min-height: 200px;
   height: 290px;
 
   img {
+    height: 90%;
+    @include center-both();
     @extend %img--responsive;
   }  
 }
