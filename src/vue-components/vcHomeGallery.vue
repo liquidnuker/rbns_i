@@ -1,6 +1,6 @@
 <template>
 <div>
-  <section class="home panel">
+  <div class="home panel">
     <header class="panel_heading">
       <h2 class="title--centered">Galleries</h2>
       <h3 class="title--centered">
@@ -10,7 +10,7 @@
     <article class="row panel_body">
       <!--begin gallery prev row1-->
       <div class="row gallery_preview">
-        <section class="col-sm-3">
+        <div class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
             <a href="#/gallery/chokkan">
@@ -19,18 +19,18 @@
             <a class="gallery_preview_links" href="#/gallery/chokkan">Chokkan</a>
           </div>
           <!--gallery_preview_box-->
-        </section>
-        <section class="col-sm-3">
+        </div>
+        <div class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
             <a href="#/gallery/fukinagashi">
-            <img src="src/img/ui/prev/fukinagashi.jpg" class="img--responsive" alt="fukinagashi gallery" title="fukinagashi gallery">
+              <img src="src/img/ui/prev/fukinagashi.jpg" class="img--responsive" alt="fukinagashi gallery" title="fukinagashi gallery">
             </a>
             <a class="gallery_preview_links" href="#/gallery/fukinagashi">Fukinagashi</a>
           </div>
           <!--gallery_preview_box-->
-        </section>
-        <section class="col-sm-3">
+        </div>
+        <div class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
             <a href="#/gallery/hokidachi">
@@ -39,8 +39,8 @@
             <a class="gallery_preview_links" href="#/gallery/hokidachi">Hokidachi</a>
           </div>
           <!--gallery_preview_box-->
-        </section>
-        <section class="col-sm-3">
+        </div>
+        <div class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
             <a href="#/gallery/kabudachi">
@@ -49,22 +49,22 @@
             <a class="gallery_preview_links" href="#/gallery/kabudachi">Kabudachi</a>
           </div>
           <!--gallery_preview_box-->
-        </section>
+        </div>
       </div>
       <!--/gallery prev row1-->
       <!--begin gallery prev row2-->
       <div class="row gallery_preview">
-        <section class="col-sm-3">
+        <div class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
             <a href="#/gallery/moyogi">
-            <img src="src/img/ui/prev/moyogi.jpg" class="img--responsive" alt="moyogi gallery" title="moyogi gallery">
+              <img src="src/img/ui/prev/moyogi.jpg" class="img--responsive" alt="moyogi gallery" title="moyogi gallery">
             </a>
             <a class="gallery_preview_links" href="#/gallery/moyogi">Moyogi</a>
           </div>
           <!--gallery_preview_box-->
-        </section>
-        <section class="col-sm-3">
+        </div>
+        <div class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
             <a href="#/gallery/sokan">
@@ -73,8 +73,8 @@
             <a class="gallery_preview_links" href="#/gallery/sokan">Sokan</a>
           </div>
           <!--gallery_preview_box-->
-        </section>
-        <section class="col-sm-3">
+        </div>
+        <div class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
             <a href="#/gallery/yose-ue">
@@ -83,8 +83,8 @@
             <a class="gallery_preview_links" href="#/gallery/yose-ue">Yose-ue</a>
           </div>
           <!--gallery_preview_box-->
-        </section>
-        <section class="col-sm-3">
+        </div>
+        <div class="col-sm-3">
           <!--gallery_preview_box-->
           <div class="gallery_preview_box">
             <a href="#/gallery/han-kengai">
@@ -93,11 +93,11 @@
             <a class="gallery_preview_links" href="#/gallery/han-kengai">Han-kengai</a>
           </div>
           <!--gallery_preview_box-->
-        </section>
+        </div>
       </div>
       <!--/gallery prev row2-->
     </article>
-  </section>
+  </div>
 </div>
 </template>
 <script>

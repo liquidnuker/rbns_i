@@ -1,6 +1,6 @@
 <template>
 <div>
-  <section v-for="i in artists" class="artists panel">
+  <div v-for="i in artists" class="artists panel">
     <header class="panel_heading">
       <h2 class="title--centered">{{ i.name }}</h2>
       <h3 class="title--centered">
@@ -8,8 +8,8 @@
       </h3>
       <hr class="hr--primary">
     </header>
-    <article class="row panel_body">
-      <div class="col-sm-12 row article_holder">
+    <div class="row panel_body">
+      <article class="col-sm-12 row article_holder">
         <div class="article_photo--left">
           <img :src="i.photo" class="img--responsive" :alt="i.photo_caption" :title="i.photo_caption">
           <h4 class="title--centered">{{ i.photo_caption }}</h4>
@@ -20,9 +20,9 @@
         <br><br>
         {{ i.storyP2 }}
       </p>
-    </div>
-  </article>
-</section>
+    </article>
+  </div>
+</div>
 </div>
 </template>
 <script>

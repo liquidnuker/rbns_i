@@ -1,6 +1,6 @@
 <template>
 <div>
-  <section class="home panel">
+  <div class="home panel">
     <header class="panel_heading">
       <h2 class="title--centered">Artists</h2>
       <h3 class="title--centered">
@@ -9,7 +9,7 @@
     </header>
     <article class="row panel_body">
       <!--begin triple news_preview-->
-      <section class="col-xs-12 col-sm-4 artists_preview">
+      <div class="col-xs-12 col-sm-4 artists_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 artists_preview_box">
           <a href="#/artists">
@@ -23,13 +23,13 @@
           </summary>
         </div>
         <!--end news_preview_box-->
-      </section>
-      <section class="col-xs-12 col-sm-4 artists_preview">
+      </div>
+      <div class="col-xs-12 col-sm-4 artists_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 artists_preview_box">
-        <a href="#/artists">
-                    <img src="src/img/ui/prev/artist2.jpg" class="img--responsive" alt="artist2" title="artist2">
-        </a>
+          <a href="#/artists">
+            <img src="src/img/ui/prev/artist2.jpg" class="img--responsive" alt="artist2" title="artist2">
+          </a>
           <h4>
           <a href="#/artists">Artist Name</a>
           </h4>
@@ -38,8 +38,8 @@
           </summary>
         </div>
         <!--end news_preview_box-->
-      </section>
-      <section class="col-xs-12 col-sm-4 artists_preview">
+      </div>
+      <div class="col-xs-12 col-sm-4 artists_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 artists_preview_box">
           <a href="#/artists">
@@ -53,10 +53,10 @@
           </summary>
         </div>
         <!--end news_preview_box-->
-      </section>
-      <!--/triple news-->
+      </div>
+      <!--ws-->
     </article>
-  </section>
+  </div>
 </div>
 </template>
 <script>

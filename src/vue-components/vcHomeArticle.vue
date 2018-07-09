@@ -1,6 +1,6 @@
 <template>
 <div>
-  <section class="home panel">
+  <div class="home panel">
     <header class="panel_heading">
       <h2 class="title--centered">The Ancient Art of Bonsai</h2>
       <h3 class="title--centered">
@@ -9,7 +9,7 @@
     </header>
     <article class="row panel_body">
       <!--begin triple news_preview-->
-      <section class="col-xs-12 col-sm-4 news_preview">
+      <div class="col-xs-12 col-sm-4 news_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 news_preview_box">
           <a href="#/articles">
@@ -22,8 +22,8 @@
           </summary>
         </div>
         <!--end news_preview_box-->
-      </section>
-      <section class="col-xs-12 col-sm-4 news_preview">
+      </div>
+      <div class="col-xs-12 col-sm-4 news_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 news_preview_box">
           <a href="#/articles">
@@ -36,8 +36,8 @@
           </summary>
         </div>
         <!--end news_preview_box-->
-      </section>
-      <section class="col-xs-12 col-sm-4 news_preview">
+      </div>
+      <div class="col-xs-12 col-sm-4 news_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 news_preview_box">
           <a href="#/articles">
@@ -50,10 +50,10 @@
           </summary>
         </div>
         <!--end news_preview_box-->
-      </section>
+      </div>
       <!--/end triple news prev-->
     </article>
-  </section>
+  </div>
 </div>
 </template>
 <script>

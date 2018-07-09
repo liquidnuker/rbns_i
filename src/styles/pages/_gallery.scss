@@ -31,13 +31,8 @@
   @extend %link_color--hover;
 }
 
-#gallery-placeholder {
-  // background-color: #000;
-  padding: 0px;
-}
-
-#galleryContainer {
-  #ajaxbox {
+.galleryContainer {
+  .ajaxbox {
     display: block;
     // min-width: 154px;
     margin-bottom: 6px;
@@ -46,8 +41,10 @@
     @extend %border--primary;
     @extend %caudex--regular;
     @extend %font_color--primary;
+    
     img {
       @extend %img--responsive;
+      cursor: pointer;
     }
   }
 
