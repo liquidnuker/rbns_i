@@ -116,6 +116,7 @@ body {
 .news_preview {
   img {
     @extend %img--responsive;
+    cursor: pointer;
   }
 }
 
