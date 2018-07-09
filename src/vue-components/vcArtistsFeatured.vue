@@ -11,7 +11,7 @@
     <article class="row panel_body">
       <div class="col-sm-12 row article_holder">
         <div class="article_photo--left">
-          <img :src="i.photo" class="img--responsive" alt="article1">
+          <img :src="i.photo" class="img--responsive" :alt="i.photo_caption" :title="i.photo_caption">
           <h4 class="title--centered">{{ i.photo_caption }}</h4>
         </div>
       <blockquote>&quot;{{ i.quote }}&quot;</blockquote>

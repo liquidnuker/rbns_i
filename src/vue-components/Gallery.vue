@@ -38,7 +38,8 @@
           </div>
           <div class="bs4modal-body">
             <img :src="'src/img/categories/' + currentCategory + '/' + currentItems[currentIndex].img +
-      '.jpg'" :alt="currentItems[currentIndex].description">
+      '.jpg'" :alt="currentItems[currentIndex].description" 
+      :title="currentItems[currentIndex].description">
           </div>
           <div class="bs4modal-footer">
             <button type="button" class="btn btn1-02" data-dismiss="bs4modal" @click="flipModalIndex('prev')">
@@ -182,9 +183,10 @@
                   <!-- grid for rwd -->
                   <div v-for="(i, index) in itemList" class="col-xs-12 col-sm-4 col-lg-3 gridder">
                     <div id="ajaxbox">
-                      <img v-if="currentCategory" :src="'src/img/categories/' + currentCategory + '/' + i.img + '_thumb.jpg'" :alt="i.id"
+                      <img v-if="currentCategory" :src="'src/img/categories/' + currentCategory + '/' + i.img + '_thumb.jpg'" :alt="i.id" 
+                      :title="i.id"
                       @click="setCurrentIndex(i.id)"><br>
-                      <p>{{ i.species }} {{ i.value }}</p>
+                      <p>{{ i.id }} Value{{ i.value }}</p>
                     </div>
                   </div>
                   <!-- close grid -->

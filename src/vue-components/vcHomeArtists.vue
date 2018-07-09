@@ -12,7 +12,7 @@
       <section class="col-xs-12 col-sm-4 artists_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 artists_preview_box">
-          <img src="src/img/ui/prev/artist1.jpg" class="img--responsive" alt="latest news">
+          <img src="src/img/ui/prev/artist1.jpg" class="img--responsive" alt="artist1" title="artist1">
           <h4>
           <a href="artists.html">Artist Name</a>
           </h4>
@@ -25,7 +25,7 @@
       <section class="col-xs-12 col-sm-4 artists_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 artists_preview_box">
-          <img src="src/img/ui/prev/artist2.jpg" class="img--responsive" alt="latest news">
+          <img src="src/img/ui/prev/artist2.jpg" class="img--responsive" alt="artist2" title="artist2">
           <h4>
           <a href="artists.html">Artist Name</a>
           </h4>
@@ -38,7 +38,7 @@
       <section class="col-xs-12 col-sm-4 artists_preview">
         <!--begin news_preview_box-->
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 artists_preview_box">
-          <img src="src/img/ui/prev/artist3.jpg" class="img--responsive" alt="latest news">
+          <img src="src/img/ui/prev/artist3.jpg" class="img--responsive" alt="artist3" title="artist3">
           <h4>
           <a href="artists.html">Artist Name</a>
           </h4>

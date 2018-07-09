@@ -43,7 +43,8 @@ export default class Carousel1_04 {
       const itemHolder = document.createElement("div");
       itemHolder.className = this.itemHolderClass;
       itemHolder.innerHTML = `<div class="row">
-      <img src='src/img/ui/stage/${items[i].imgSrc}.jpg'>
+      <img src='src/img/ui/stage/${items[i].imgSrc}.jpg' 
+      alt='${items[i].description}' title='${items[i].description}'>
       </div>
       <div class="row carousel1-04_description">
       <p>${items[i].description}</p>

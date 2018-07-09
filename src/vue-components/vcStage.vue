@@ -1,12 +1,12 @@
 <template>
 <div>
   <div class="col-sm-4 bonsai_stage--bg">
-    <img src="src/img/ui/stage/vcbonsai_logo1.svg" alt="bonsai logo">
+    <img src="src/img/ui/stage/vcbonsai_logo1.svg" alt="vcBonSai logo" title="vcBonSai logo">
   </div>
   <div class="col-sm-8">
     <!--begin right side-->
     <div class="row bonsai_stage--right">
-      <img src="src/img/ui/stage/carousel_bonsai_front.png" class="img--responsive" alt="bonsai">
+      <img src="src/img/ui/stage/carousel_bonsai_front.png" class="img--responsive" alt="" title="">
     </div>
     <!--begin carousel_holder -->
     <div class="carousel_holder">
