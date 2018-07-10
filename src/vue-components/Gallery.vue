@@ -63,7 +63,7 @@
       <!-- breadcrumb -->
       <div class="row">
         <span class="breadcrumb">
-          <a href="#/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+          <a href="#/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg></a>
           <a href="#/">Home</a>
           &gt;&nbsp;Gallery
         </span>
@@ -82,9 +82,22 @@
         </header>
         <div class="panel_body">
           <div class="row bonsai_gallery">
-            <nav class="col-sm-3">
+            <nav class="col-sm-3 bonsai_filter">
               <!--side filter-->
-              <vcGalleryLeftNav1 />
+              <h4>Species</h4>
+              <ul class="bonsai_species" v-for="i in navCategories">
+                <li>
+                  <a @click="filterSpecies(i)">{{ capitalize(i) }}</a>
+                </li>
+              </ul> 
+              <h4>Value:</h4>
+              <ul class="bonsai_value">
+                <li><a>5</a></li>
+                <li><a>4</a></li>
+                <li><a>3</a></li>
+                <li><a>2</a></li>
+                <li><a>1</a></li>
+              </ul>
               <!--end side filter-->
             </nav>
             <div class="row col-sm-9 gallery">
@@ -182,7 +195,8 @@
                   <!-- grid for rwd -->
                   <ul v-for="(i, index) in itemList" class="col-xs-12 col-sm-4 col-lg-3 gridder">
                     <li class="ajaxbox" :aria-posinset="index + 1" :aria-setsize="itemList.length">
-                      <img v-if="currentCategory" :src="'src/img/categories/' + currentCategory + '/' + i.img + '_thumb.jpg'" :alt="i.id"
+                      <span v-if="!isThumbsReady">spinner</span>
+                      <img v-else :src="'src/img/categories/' + currentCategory + '/' + i.img + '_thumb.jpg'" :alt="i.id"
                       :title="i.id"
                       @click="setCurrentIndex(i.id)"><br>
                       <p>{{ i.id }} Value{{ i.value }}</p>
@@ -217,7 +231,6 @@
 <script>
 const vcMenubar = () => import('./vcMenuBar.vue');
 const vcStage = () => import('./vcStage.vue');
-const vcGalleryLeftNav1 = () => import('./vcGalleryLeftNav1.vue');
 const vcFooter = () => import('./vcFooter.vue');
 
 import {bonsaiCategories} from "../js/bonsaicategories.js";
@@ -231,6 +244,9 @@ import {indexFinder} from "../js/indexfinder.js";
 export default {
   data() {
       return {
+        navCategories: "",
+        isThumbsReady: null,
+
         currentCategory: null,
         allItems: "",
         currentItems: "",
@@ -257,9 +273,9 @@ export default {
       vcMenubar: vcMenubar,
       vcFooter: vcFooter,
       vcStage: vcStage,
-      vcGalleryLeftNav1: vcGalleryLeftNav1
     },
     mounted: function () {
+      this.navCategories = bonsaiCategories;
       this.checkCategory();
     },
     watch: {
@@ -268,6 +284,10 @@ export default {
       }
     },
     methods: {
+      capitalize: function(value) {
+        value = value.toString();
+        return value.charAt(0).toUpperCase() + value.slice(1);
+      },
       checkCategory: function () {
         // check if category exists before loading json
         let categoryToCheck = this.$route.params.species.toLowerCase();
@@ -282,7 +302,15 @@ export default {
           this.loadItems(this.currentCategory);
         }
       },
+      filterSpecies: function(species) {
+        // this.currentCategory = species;
+        // this.loadItems(species);
+        router.push({
+            path: "/gallery/" + species
+          });
+      },
       loadItems: function (category) {
+        this.isThumbsReady = false;
         const jsonUrl = "./src/js/ajax/" + category + ".json";
 
         axios_get(jsonUrl)
@@ -290,6 +318,7 @@ export default {
             this.currentItems = response.data[this.currentCategory];
           })
           .then(() => {
+            this.isThumbsReady = true;
             this.activatePager();
           });
       },

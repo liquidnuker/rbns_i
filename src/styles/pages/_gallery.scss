@@ -10,10 +10,25 @@
   @extend %margin--auto;
 }
 
+.bonsai_filter {
+  h4 {
+    @extend %font--bold;
+    @extend %link_color--hover;
+    margin: 4px 0 4px 0; /* trbl */
+  }
+}
+
 .bonsai_species a,
 .bonsai_value a {
+  @extend %display--block;
   @extend %font_color--primary;
+  margin-bottom: 4px;
+  text-decoration: underline;  
   cursor: pointer;
+
+  &:hover {
+    text-decoration: none;  
+  }
 }
 
 .bonsai_value h4 {
@@ -33,15 +48,16 @@
 
 .galleryContainer {
   .ajaxbox {
-    display: block;
-    // min-width: 154px;
-    margin-bottom: 6px;
-    padding: 6px;
     @extend %lrbg3;
     @extend %border--primary;
     @extend %caudex--regular;
     @extend %font_color--primary;
-    
+
+    display: block;
+    min-height: 242px;
+    margin-bottom: 6px;
+    padding: 6px;
+        
     img {
       @extend %img--responsive;
       cursor: pointer;
