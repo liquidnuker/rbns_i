@@ -26,6 +26,7 @@
 </div>
 </template>
 <script>
+import {jsonDir} from "../js/jsondir.js";
 import {axios_get} from "../js/axios_get.js";
 export default {
   data() {
@@ -46,7 +47,7 @@ export default {
     },
     methods: {
       loadArtists: function() {
-        const jsonUrl = "./src/js/ajax/artistsfeatured.json";
+        const jsonUrl = jsonDir + "artistsfeatured.json";
 
         let self = this;
         axios_get(jsonUrl)

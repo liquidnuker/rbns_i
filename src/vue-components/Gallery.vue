@@ -233,6 +233,7 @@ const vcMenubar = () => import('./vcMenuBar.vue');
 const vcStage = () => import('./vcStage.vue');
 const vcFooter = () => import('./vcFooter.vue');
 
+import {jsonDir} from "../js/jsondir.js";
 import {bonsaiCategories} from "../js/bonsaicategories.js";
 import {itemExists} from "../js/itemexists.js";
 import {router} from "../js/router.js";
@@ -311,7 +312,7 @@ export default {
       },
       loadItems: function (category) {
         this.isThumbsReady = false;
-        const jsonUrl = "./src/js/ajax/" + category + ".json";
+        const jsonUrl = jsonDir + category + ".json";
 
         axios_get(jsonUrl)
           .then((response) => {

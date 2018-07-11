@@ -72,17 +72,17 @@ module.exports = {
     //   name: 'vendor',
     // }),
     extractCSS,
-    // new PurifyCSSPlugin({
-    //   // Give paths to parse for rules. These should be absolute!
-    //   paths: glob.sync([
-    //     path.join(__dirname, '*.html'),
-    //     path.join(__dirname, 'src/vue-components/*.vue')
-    //   ]),
-    //   purifyOptions: {
-    //     whitelist: [ '*:not*' ]
-    //   },
-    //   minimize: true
-    // })
+    new PurifyCSSPlugin({
+      // Give paths to parse for rules. These should be absolute!
+      paths: glob.sync([
+        path.join(__dirname, '*.html'),
+        path.join(__dirname, 'src/vue-components/*.vue')
+      ]),
+      purifyOptions: {
+        whitelist: [ '*:not*' ]
+      },
+      minimize: true
+    })
   ],
   resolve: {
     modules: [
