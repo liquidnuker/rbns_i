@@ -2,7 +2,7 @@
 <div>
   <!-- all articles for topic 2 -->
   <header class="articles panel_heading">
-    <h2 class="title--centered">Article Heading2</h2>
+    <h2 class="title--centered" tabindex="0">Article Heading2</h2>
     <summary>
     <h3 class="title--centered">
     Lorem ipsum dolor sit amet

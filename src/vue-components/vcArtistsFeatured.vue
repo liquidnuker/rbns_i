@@ -2,7 +2,7 @@
 <div>
   <div v-for="i in artists" class="artists panel">
     <header class="panel_heading">
-      <h2 class="title--centered">{{ i.name }}</h2>
+      <h2 class="title--centered" tabindex="0">{{ i.name }}</h2>
       <h3 class="title--centered">
       {{ i.description }}
       </h3>

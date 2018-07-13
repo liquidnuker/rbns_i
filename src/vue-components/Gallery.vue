@@ -37,7 +37,8 @@
             </button>
           </div>
           <div class="bs4modal-body">
-            <img :src="'src/img/categories/' + currentCategory + '/' + currentItems[currentIndex].img +
+            <span v-if="!isModalImgReady">spinner</span>
+            <img v-if="isModalImgReady" :src="'src/img/categories/' + currentCategory + '/' + currentItems[currentIndex].img +
             '.jpg'" :alt="currentItems[currentIndex].description"
             :title="currentItems[currentIndex].description">
           </div>
@@ -87,16 +88,17 @@
               <h4>Species</h4>
               <ul class="bonsai_species" v-for="i in navCategories">
                 <li>
-                  <a @click="filterSpecies(i)">{{ capitalize(i) }}</a>
+                  <a @click="filterSpecies(i)" 
+                   @keyup.enter="filterSpecies(i)" tabindex="0">{{ capitalize(i) }}</a>
                 </li>
               </ul> 
               <h4>Value:</h4>
               <ul class="bonsai_value">
-                <li><a>5</a></li>
-                <li><a>4</a></li>
-                <li><a>3</a></li>
-                <li><a>2</a></li>
-                <li><a>1</a></li>
+                <li tabindex="0"><a>5</a></li>
+                <li tabindex="0"><a>4</a></li>
+                <li tabindex="0"><a>3</a></li>
+                <li tabindex="0"><a>2</a></li>
+                <li tabindex="0"><a>1</a></li>
               </ul>
               <!--end side filter-->
             </nav>
@@ -250,7 +252,7 @@ export default {
 
         currentCategory: null,
         allItems: "",
-        currentItems: "",
+        currentItems: null,
         itemList: "", // paginated items
 
         pg: "",
@@ -265,6 +267,7 @@ export default {
         currentIndex: 0,
         modalVisible: false,
         vcModal1_animateEntry: false,
+        isModalImgReady: false,
 
         // for carousel currentIndex
         carouselIndex: 3
@@ -320,6 +323,7 @@ export default {
           })
           .then(() => {
             this.isThumbsReady = true;
+            this.isModalImgReady = true;
             this.activatePager();
           });
       },
@@ -386,6 +390,8 @@ export default {
       },
       toggleModal: function(isActive) {
         this.modalVisible = isActive;
+        // to remove last viewed modal image
+        this.isModalImgReady = isActive;
       },
       closeMainModal: function(event) {
         if (event.target.id === "bs4modal_bg") {
