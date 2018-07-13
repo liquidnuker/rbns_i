@@ -17,7 +17,7 @@
     <main class="row">
     <!-- vcModal1 -->
     <!-- dont show if currentItems not yet ready -->
-    <div v-if="currentItems" :class="{
+    <div v-if="isModalReady" :class="{
       'bs4modal vcmodal_hide': !modalVisible,
       'bs4modal vcmodal_show':  modalVisible}"
       id="bs4modal_bg"
@@ -29,7 +29,7 @@
           'bs4modal-content': !vcModal1_animateEntry,
           'bs4modal-content animated bounceIn': vcModal1_animateEntry}">
           <div class="bs4modal-header">
-            <h2 class="bs4modal-title">
+            <h2 class="bs4modal-title" v-if="currentItems[currentIndex].id !== undefined">
             {{ currentItems[currentIndex].id }}
             </h2>
             <button type="button" class="btn btn1-01" data-dismiss="bs4modal" aria-label="Close" @click="toggleModal(false)">
@@ -252,7 +252,7 @@ export default {
 
         currentCategory: null,
         allItems: "",
-        currentItems: null,
+        currentItems: "",
         itemList: "", // paginated items
 
         pg: "",
@@ -267,7 +267,8 @@ export default {
         currentIndex: 0,
         modalVisible: false,
         vcModal1_animateEntry: false,
-        isModalImgReady: false,
+        isModalReady: false, // prevent undefined modal contents
+        isModalImgReady: false, // to remove last viewed modal image
 
         // for carousel currentIndex
         carouselIndex: 3
@@ -315,6 +316,7 @@ export default {
       },
       loadItems: function (category) {
         this.isThumbsReady = false;
+        this.isModalReady = false;
         const jsonUrl = jsonDir + category + ".json";
 
         axios_get(jsonUrl)
@@ -323,6 +325,7 @@ export default {
           })
           .then(() => {
             this.isThumbsReady = true;
+            this.isModalReady = true;
             this.isModalImgReady = true;
             this.activatePager();
           });
@@ -385,12 +388,10 @@ export default {
       }, 
       setCurrentIndex: function(id) {
         this.currentIndex = indexFinder("id", id, this.currentItems);
-
         this.toggleModal(true);
       },
       toggleModal: function(isActive) {
         this.modalVisible = isActive;
-        // to remove last viewed modal image
         this.isModalImgReady = isActive;
       },
       closeMainModal: function(event) {
