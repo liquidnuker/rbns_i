@@ -38,7 +38,7 @@
           </div>
           <div class="bs4modal-body">
             <span v-if="!isModalImgReady">spinner</span>
-            <img v-if="isModalImgReady" :src="'src/img/categories/' + currentCategory + '/' + currentItems[currentIndex].img +
+            <img v-else :src="'src/img/categories/' + currentCategory + '/' + currentItems[currentIndex].img +
             '.jpg'" :alt="currentItems[currentIndex].description"
             :title="currentItems[currentIndex].description">
           </div>
@@ -200,7 +200,7 @@
                       <span v-if="!isThumbsReady">spinner</span>
                       <img v-else :src="'src/img/categories/' + currentCategory + '/' + i.img + '_thumb.jpg'" :alt="i.id"
                       :title="i.id"
-                      @click="setCurrentIndex(i.id)"><br>
+                      @click="launchModal(i.id)"><br>
                       <p>{{ i.id }} Value{{ i.value }}</p>
                     </li>
                   </ul>
@@ -268,8 +268,8 @@ export default {
         modalVisible: false,
         vcModal1_animateEntry: false,
         isModalReady: false, // prevent undefined modal contents
-        isModalImgReady: false, // to remove last viewed modal image
-
+        isModalImgReady: false, // remove last viewed modal image
+        
         // for carousel currentIndex
         carouselIndex: 3
       };
@@ -316,7 +316,6 @@ export default {
       },
       loadItems: function (category) {
         this.isThumbsReady = false;
-        this.isModalReady = false;
         const jsonUrl = jsonDir + category + ".json";
 
         axios_get(jsonUrl)
@@ -325,8 +324,6 @@ export default {
           })
           .then(() => {
             this.isThumbsReady = true;
-            this.isModalReady = true;
-            this.isModalImgReady = true;
             this.activatePager();
           });
       },
@@ -386,13 +383,14 @@ export default {
       pageJump: function(page) {
         this.showItems(Number(page));
       }, 
-      setCurrentIndex: function(id) {
+      launchModal: function(id) {
         this.currentIndex = indexFinder("id", id, this.currentItems);
         this.toggleModal(true);
       },
       toggleModal: function(isActive) {
         this.modalVisible = isActive;
         this.isModalImgReady = isActive;
+        this.isModalReady = isActive;
       },
       closeMainModal: function(event) {
         if (event.target.id === "bs4modal_bg") {
