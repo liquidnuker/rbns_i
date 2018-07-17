@@ -37,23 +37,35 @@ input [type="button"],
 
 // themes
 // ==================================================/
-.btn1-01 {
-  color: #fff;
-  padding: 4px 8px 4px 8px; /* trbl */
-  border: 1px solid #000;
+.btn_modal_close {
   @extend %btn_cursor--pointer;
-  @include background-gradient(#cc0000, #be0101, 'vertical');
-  text-shadow: 1px 1px 1px #be0101;
-  display: inline-block;
+  @extend %display--inline-block;
+  @extend %pos--absolute;
+  @extend %padd--4;
+  // @extend %lrbg1;
+  background-color: #4d3d29;
+  @extend %border--primary;
 
+  top: -5px;
+  right: -5px;
+  height: 46px;
+  width: 46px;
+  border-radius: 50%;
+
+  svg {
+    fill: #fff;
+  }
+  
   &:hover {
-    background: none;
-    background-color: #cc0000;
+    background-color: #c3be7a;
+    svg {
+      fill: #8c6239;  
+    }
   }
 }
 
 // modal prev/next
-.btn1-02 {
+.btn_modal_prevnext {
   @extend %padd--4;
   @extend %lrbg2;
   @extend %font_color--primary;

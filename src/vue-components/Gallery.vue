@@ -27,8 +27,10 @@
             <h2 class="bs4modal-title" v-if="currentItems[currentIndex].id !== undefined">
             {{ currentItems[currentIndex].id }}
             </h2>
-            <button type="button" class="btn btn1-01" data-dismiss="bs4modal" aria-label="Close" @click="toggleModal(false)">
-            <span aria-hidden="true">&times;</span>
+            <button type="button" class="btn btn_modal_close" data-dismiss="bs4modal" aria-label="Close" @click="toggleModal(false)">
+            <span aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
+            </span>
             </button>
           </div>
           <div class="bs4modal-body">
@@ -38,12 +40,12 @@
             :title="currentItems[currentIndex].description">
           </div>
           <div class="bs4modal-footer">
-            <button type="button" class="btn btn1-02" data-dismiss="bs4modal" @click="flipModalIndex('prev')">
+            <button type="button" class="btn btn_modal_prevnext" data-dismiss="bs4modal" @click="flipModalIndex('prev')">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
               <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
             </svg>
             Prev</button>
-            <button type="button" class="btn btn1-02"
+            <button type="button" class="btn btn_modal_prevnext"
             @click="flipModalIndex('next')">
             Next
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
