@@ -2,11 +2,6 @@
 <div>
   <!-- container -->
   <div class="container">
-    <!--begin menubar2-->
-    <nav>
-      <vcMenubar />
-    </nav>
-    <!--end menubar2-->
     <!--begin stage-->
     <div class="row stage">
       <vcStage
@@ -44,22 +39,15 @@
     </article>
     </main>
     <!--/panel container-->
-    <!--begin footer-->
-    <footer>
-      <vcFooter />
-    </footer>
-    <!--end footer-->
   </div>
   <!-- /.container -->
 </div>
 </template>
 <script>
-const vcMenubar = () => import('./vcMenuBar.vue');
 const vcStage = () => import('./vcStage.vue');
 const vcArticleSet1 = () => import('./vcArticleSet1.vue');
 const vcArticleSet2 = () => import('./vcArticleSet2.vue');
 const vcArticleSet3 = () => import('./vcArticleSet3.vue');
-const vcFooter = () => import('./vcFooter.vue');
 export default {
   data () {
     return {   
@@ -75,8 +63,6 @@ export default {
     "prName1"
   ],
   components: {
-    vcMenubar: vcMenubar,
-    vcFooter: vcFooter,
     vcStage: vcStage,
     vcArticleSet1: vcArticleSet1,
     vcArticleSet2: vcArticleSet2,

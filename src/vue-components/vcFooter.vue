@@ -1,5 +1,5 @@
 <template>
-<div class="row footer2" role="footer">
+<div class="row footer2 container" role="footer">
   <!--begin segment1-->
   <section class="col-sm-12 col-md-6">
     <vcFooterSegment1 />

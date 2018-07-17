@@ -16,7 +16,6 @@ position: relative;
 
 li {
   background-color: #666;   
-  padding: 10px 0px 10px 0px;
   text-align: center;
   position: relative;
 
@@ -26,16 +25,11 @@ li {
 }
 
 a {
+  padding: 10px 0px 10px 0px;
   display: block;
   color: #fff;
 }
 
-// *mobile landscape (480x320)
-@include mq($from: mobileLandscape) {
-  .menubar2_mainItem {
-    width: 20%;
-  }
-}
 }
 
 

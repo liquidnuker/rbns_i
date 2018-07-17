@@ -8,6 +8,8 @@ const vcArtists = (resolve) => import("../vue-components/Artists.vue").then(reso
 const vcGallery = (resolve) => import("../vue-components/Gallery.vue").then(resolve);
 const vcGlobal404 = (resolve) => import("../vue-components/Global404.vue").then(resolve);
 
+const vcFooter = (resolve) => import("../vue-components/vcFooter.vue").then(resolve);
+
 const routes = [{
   path: "/",
   component: vcHome
@@ -35,5 +37,12 @@ new Vue({
   router,
   render: h => h(vcRouterView)
 });
+
+// separate component renders
+new Vue({
+  el: '#footer_mount',
+  // router, // optional for catching $route.params inside component
+  render: h => h(vcFooter)
+})
 
 export {router};

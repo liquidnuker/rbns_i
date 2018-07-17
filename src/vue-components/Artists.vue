@@ -2,11 +2,6 @@
 <div>
   <!-- container -->
   <div class="container">
-    <!--begin menubar2-->
-    <nav>
-      <vcMenubar />
-    </nav>
-    <!--end menubar2-->
     <!--begin stage-->
     <div class="row stage">
       <vcStage
@@ -31,20 +26,13 @@
     <!-- end featured artists -->
     </main>
     <!--/panel container-->
-    <!--begin footer2-->
-    <footer>
-      <vcFooter />
-    </footer>
-    <!--end footer2-->
   </div>
   <!-- /.container -->
 </div>
 </template>
 <script>
-const vcMenubar = () => import('./vcMenuBar.vue');
 const vcStage = () => import('./vcStage.vue');
 const vcArtistsFeatured = () => import('./vcArtistsFeatured.vue');
-const vcFooter = () => import('./vcFooter.vue');
 export default {
   data () {
     return {
@@ -60,8 +48,6 @@ props: [
 "prName1"
 ],
 components: {
-  vcMenubar: vcMenubar,
-  vcFooter: vcFooter,
   vcStage: vcStage,
   vcArtistsFeatured: vcArtistsFeatured
 },

@@ -2,11 +2,6 @@
 <div>
   <!-- container -->
   <div class="container">
-    <!--begin menubar2-->
-    <nav>
-      <vcMenubar />
-    </nav>
-    <!--end menubar2-->
     <!--begin stage-->
     <div class="row stage">
       <vcStage
@@ -221,19 +216,12 @@
     </div>
     </main>
     <!--/panel container-->
-    <!--begin footer2-->
-    <footer>
-      <vcFooter />
-    </footer>
-    <!--end footer2-->
   </div>
   <!-- /.container -->
 </div>
 </template>
 <script>
-const vcMenubar = () => import('./vcMenuBar.vue');
 const vcStage = () => import('./vcStage.vue');
-const vcFooter = () => import('./vcFooter.vue');
 
 import {jsonDir} from "../js/jsondir.js";
 import {bonsaiCategories} from "../js/bonsaicategories.js";
@@ -275,8 +263,6 @@ export default {
       };
     },
     components: {
-      vcMenubar: vcMenubar,
-      vcFooter: vcFooter,
       vcStage: vcStage,
     },
     mounted: function () {
