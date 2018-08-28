@@ -37,36 +37,36 @@
 import {carouselItems} from "../js/carouselitems.js";
 import Carousel1_04 from "../js/carousel1-04.js";
 export default {
-data() {
-return {
-}
-},
-watch: {},
-props: [
-"prCarouselIndex"
-],
-components: {
-},
-mounted: function () {
-this.activateCarousel();
-},
-methods: {
-activateCarousel: function () {
-let C4 = new Carousel1_04({
-dataSrc: carouselItems,
-cIndex: this.prCarouselIndex,
-mainItemContainer: "carousel1-04_content",
-navPrevious: "carousel1_04_previous",
-navNext: "carousel1_04_next",
-itemHolderClass: "carousel1_04_items",
-item_active: " carousel1_04_items--active",
-item_inActive: "carousel1_04_items",
-pageBtnClass: "carousel1_04_pagebuttons",
-pageBtn_active: " carousel1_04_pagebuttons--active",
-pageBtn_inActive: "carousel1_04_pagebuttons"
-});
-C4.init();
-}
-}
+  data() {
+    return {
+    }
+  },
+  watch: {},
+  props: [
+  "prCarouselIndex"
+  ],
+  components: {
+  },
+  mounted: function () {
+    this.activateCarousel();
+  },
+  methods: {
+    activateCarousel: function () {
+      let C4 = new Carousel1_04({
+        dataSrc: carouselItems,
+        cIndex: this.prCarouselIndex,
+        mainItemContainer: "carousel1-04_content",
+        navPrevious: "carousel1_04_previous",
+        navNext: "carousel1_04_next",
+        itemHolderClass: "carousel1_04_items",
+        item_active: " carousel1_04_items--active",
+        item_inActive: "carousel1_04_items",
+        pageBtnClass: "carousel1_04_pagebuttons",
+        pageBtn_active: " carousel1_04_pagebuttons--active",
+        pageBtn_inActive: "carousel1_04_pagebuttons"
+      });
+      C4.init();
+    }
+  }
 }
 </script>

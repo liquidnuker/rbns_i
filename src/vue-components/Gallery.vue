@@ -236,7 +236,7 @@ import {pageBtns} from "../js/pagebtns.js";
 import {indexFinder} from "../js/indexfinder.js";
 export default {
   data() {
-      return {
+    return {
         navCategories: "",
         isThumbsReady: null,
 
@@ -283,24 +283,22 @@ export default {
       },
       checkCategory: function () {
         // check if category exists before loading json
-        let categoryToCheck = this.$route.params.species.toLowerCase();
+        let category = this.$route.params.species.toLowerCase();
 
-        if (!itemExists(categoryToCheck, bonsaiCategories)) {
-          console.log("404/revert to gallery/defaultItem");
+        if (!itemExists(category, bonsaiCategories)) {
+          // console.log("404/revert to gallery/defaultItem");
           router.push({
             path: "/gallery/chokkan"
           });
         } else {
-          this.currentCategory = categoryToCheck;
+          this.currentCategory = category;
           this.loadItems(this.currentCategory);
         }
       },
       filterSpecies: function(species) {
-        // this.currentCategory = species;
-        // this.loadItems(species);
         router.push({
-            path: "/gallery/" + species
-          });
+          path: "/gallery/" + species
+        });
       },
       loadItems: function (category) {
         this.isThumbsReady = false;
@@ -344,24 +342,20 @@ export default {
         }
       },
       flipModalIndex: function(direction) {
-        let currentIndex = this.currentIndex;
-        let currentItems = this.currentItems;
-
+        console.log("flipModalIndex");
         if (direction === "next") {
-          currentIndex = currentIndex + 1;
-          currentIndex = currentIndex % currentItems.length;
-          this.currentIndex = currentIndex;  
+          this.currentIndex = this.currentIndex + 1;
+          this.currentIndex = this.currentIndex % this.currentItems.length;
         } else {
-          if (currentIndex === 0) {
-            currentIndex = currentItems.length; // go to last
+          if (this.currentIndex === 0) {
+            this.currentIndex = this.currentItems.length; // go to last
           }
-          currentIndex = currentIndex - 1;
-          this.currentIndex = currentIndex;
+          this.currentIndex = this.currentIndex - 1;
         }
       },
       setPageBtns: function() {
         this.temp = [];
-        for (let i = 0, l = this.pg.getTotalPages(); i < l; i++) {
+      for (let i = 0, l = this.pg.getTotalPages(); i < l; i++) {
           this.temp.push(pageBtns(i, l));
         }
       },
