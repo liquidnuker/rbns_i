@@ -90,13 +90,12 @@
                 </li>
               </ul> 
               <h4>Value:</h4>
-              <ul class="bonsai_value">
-                <li tabindex="0"><a>5</a></li>
-                <li tabindex="0"><a>4</a></li>
-                <li tabindex="0"><a>3</a></li>
-                <li tabindex="0"><a>2</a></li>
-                <li tabindex="0"><a>1</a></li>
+              <ul v-for="i in bonsaiValues" class="bonsai_value">
+                <li tabindex="0">
+                <a @click="activatePager(filterValue(i))">{{ i }}</a>
+                </li>
               </ul>
+
               <!--end side filter-->
             </nav>
             <div class="row col-sm-9 gallery">
@@ -261,7 +260,8 @@ export default {
         isModalImgReady: false, // remove last viewed modal image
         
         // for carousel currentIndex
-        carouselIndex: 3
+        carouselIndex: 3,
+        bonsaiValues: [1,2,3,4,5].reverse()
       };
     },
     components: {
@@ -310,14 +310,14 @@ export default {
           })
           .then(() => {
             this.isThumbsReady = true;
-            this.activatePager();
+            this.activatePager(this.currentItems);
           });
       },
-      activatePager: function() {
+      activatePager: function(data) {
         this.pg = null;
         this.pg = new Pager({
           perPage: this.perPage,
-          data: this.currentItems
+          data: data
         });
         this.totalPages = this.pg.getTotalPages();
 
@@ -332,7 +332,7 @@ export default {
       },
       changePerPage: function(perPage) {
         this.perPage = perPage;
-        this.activatePager();
+        this.activatePager(this.currentItems);
       },
       flip: function(direction) {
         if (direction === "next") {
@@ -352,6 +352,11 @@ export default {
           }
           this.currentIndex = this.currentIndex - 1;
         }
+      },
+      filterValue: function (value) {
+        return this.currentItems.filter((el) => {
+          return el.value === value.toString();
+        });
       },
       setPageBtns: function() {
         this.temp = [];
