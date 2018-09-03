@@ -18,7 +18,7 @@
   </div>
   <!--end li-article4-->
   <small class="footer2_copyright">
-  &copy;&nbsp;All Rights Reserved
+  &copy;2018 liquidnuker.github.io&nbsp;
   </small>
 </div>
 </template>

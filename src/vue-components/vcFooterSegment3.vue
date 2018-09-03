@@ -2,10 +2,9 @@
 <div class="footer2_segment3">
   <!--begin leftnav2-->
     <nav class="row footer2_leftnav2 col-sm-12 lrbg2">
+      <h4 class="footer2_leftnav2_nav-title">Footer Segment3</h4>
+      <hr>
       <ul>
-        <li class="footer2_leftnav2_nav-title">
-          <h4>Nav Title1</h4>
-        </li>
         <li>
           <span>
           <!-- mail -->
